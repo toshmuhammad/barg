@@ -1,0 +1,26 @@
+{
+  "name": "barg-auth-pages",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/server.js",
+    "server:dev": "node --watch server/server.js",
+    "dev:all": "concurrently -n CLIENT,SERVER -c green,yellow \"npm:dev\" \"npm:server:dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
